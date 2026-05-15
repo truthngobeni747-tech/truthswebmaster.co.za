@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth's Web Master | Barber & Salon Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon-circle.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo-circle.png" alt="Truth's Web Master Logo" class="logo-icon">
+                <span>Truth's Web Master</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#recent-work">Recent Work</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" onclick="openQuoteModal()" class="btn btn-primary">Get Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO - CLEAN, CENTERED, NO CLUTTER -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Barber Websites That <span class="highlight">Fill Your Chair</span></h1>
+            <p class="subtitle">I build fast, professional websites for barbers & salons in Malamulele & Limpopo. Stop losing clients to Instagram.</p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn btn-primary btn-large">View Pricing</a>
+                <a href="#recent-work" class="btn btn-outline btn-large">See My Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat"><strong>48hrs</strong><span>Delivery</span></div>
+                <div class="stat"><strong>100%</strong><span>Mobile Ready</span></div>
+                <div class="stat"><strong>Local</strong><span>Thulamela Based</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">What I Build For You</h2>
+            <div class="service-card">
+               <i class="fas fa-bolt fa-2x"></i>
+               <h3>R1,800 Starter Site</h3>
+               <p>1-Page WhatsApp booking site. Get online in 48hrs.</p>
+               <ul>
+                  <li>Mobile-first design</li>
+                  <li>Service menu + prices</li>
+                  <li>Direct booking link</li>
+                  <li>Basic SEO setup</li>
+                </ul>
+            </div>
+                <div class="service-card featured">
+                    <i class="fas fa-crown fa-2x"></i>
+                    <h3>R3,700 VIP Website</h3>
+                    <p>5-Page pro site with booking slip system. Built for serious barbers.</p>
+                    <ul>
+                        <li>Gallery & Testimonials</li>
+                        <li>Booking slip generator</li>
+                        <li>Google SEO ready</li>
+                        <li><strong>Only 2 VIP Spots</strong></li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-sync-alt fa-2x"></i>
+                    <h3>Monthly Care</h3>
+                    <p>I handle updates, backups, and edits so you focus on cutting.</p>
+                    <ul>
+                        <li>Content changes</li>
+                        <li>Security updates</li>
+                        <li>Priority support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENT WORK -->
+    <section id="recent-work" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Recent Work</h2>
+            <div class="work-grid">
+                <div class="work-card">
+                    <div class="work-badge vip">👑 FOUNDER VIP</div>
+                    <div class="work-info">
+                        <h3>Zake Barber Shop</h3>
+                        <p>5-Page VIP Website + Booking Slip System</p>
+                        <span class="status coming-soon">COMING SOON</span>
+                    </div>
+                </div>
+
+                <div class="work-card">
+                    <div class="work-info">
+                        <h3>Demo Barber Site</h3>
+                        <p>1-Page WhatsApp Booking Demo</p>
+                        <a href="https://truthngobeni747-tech.github.io/zakes-baber" target="_blank" class="btn btn-primary">View Live</a>
+                    </div>
+                </div>
+
+                <div class="work-card spot">
+                    <div class="work-info">
+                        <h3>VIP Spot #2 Available</h3>
+                        <p><strong>R3,700</strong> • Claim the last founder spot</p>
+                        <button onclick="claimVIPSpot()" class="btn btn-accent">Claim Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+        <div class="container">
+            <h2 class="section-title">Simple Pricing</h2>
+            <p class="note">Once-off payment. No monthly fees. Domain + hosting costs separate.</p>
+            
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Starter</h3>
+                    <div class="price">R1,800</div>
+                    <ul>
+                        <li>1-Page Website</li>
+                        <li>WhatsApp Booking</li>
+                        <li>Mobile Responsive</li>
+                        <li>3-Day Delivery</li>
+                    </ul>
+                    <button onclick="openQuoteModal()" class="btn btn-outline">Start Project</button>
+                </div>
+                
+                <div class="price-card featured">
+                    <div class="popular">BEST VALUE</div>
+                    <h3>VIP Professional</h3>
+                    <div class="price">R3,700</div>
+                    <ul>
+                        <li>5-Page Website</li>
+                        <li>Booking Slip System</li>
+                        <li>Gallery + Reviews</li>
+                        <li>5-Day Delivery</li>
+                    </ul>
+                    <button onclick="openQuoteModal()" class="btn btn-primary">Get VIP Site</button>
+                </div>
+                
+                <div class="price-card">
+                    <h3>Custom</h3>
+                    <div class="price">R5,500+</div>
+                    <ul>
+                        <li>Full Custom Build</li>
+                        <li>Admin Dashboard</li>
+                        <li>Advanced Features</li>
+                        <li>1 Month Support</li>
+                    </ul>
+                    <button onclick="openQuoteModal()" class="btn btn-outline">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+     <section id="contact" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Let's Work</h2>
+            <p class="contact-sub">Based in Thulamela. Serving all of Limpopo. Reply within 2 hours.</p>
+            
+            <div class="contact-details">
+                <div class="detail">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Call Me</strong>
+                        <a href="tel:0735420981">073 542 0981</a>
+                    </div>
+                </div>
+                <div class="detail">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:truthngobeni747@gmail.com">truthngobeni747@gmail.com</a>
+                    </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Truth's Web Master. All Rights Reserved.</p>
+            <p class="site-url">truthswebmaster.co.za</p>
+        </div>
+    </footer>
+
+    <!-- SINGLE FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/27735420981?text=Hi%20Truth%2C%20I%20want%20a%20website%20for%20my%20barber%20shop." 
+       target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- GET QUOTE MODAL -->
+    <div id="quoteModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeQuoteModal()">&times;</span>
+            <h2>Request a Quote</h2>
+            <form id="quoteForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <input type="text" id="business" placeholder="Barber Shop / Salon Name" required>
+                <select id="package" required>
+                    <option value="">Select Package</option>
+                    <option value="Starter R1800">Starter R1,800</option>
+                    <option value="VIP R3700">VIP R3,700</option>
+                    <option value="Custom">Custom Build</option>
+                </select>
+                <button type="submit" class="btn btn-primary btn-full">Send to WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
